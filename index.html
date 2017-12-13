@@ -26,11 +26,7 @@
 			fullscreenControl: true,
 			mapTypeId: 'roadmap'  //hybrid衛星和地圖同時顯示
           });
-    
-		var icons = {
-		 gas:{ icon: './gas.png'},
-		 post:{ icon: './post.png'}
-		};
+		  
 			var features = [
 		   {
 			position: new google.maps.LatLng(24.2014830,120.6701820),  //台灣中油：407台中市西屯區環中路一段1686號
@@ -151,7 +147,7 @@
 			},
 		];
     
-    features.forEach(function(feature) {
+		features.forEach(function(feature) {
 		var icon = {
 			url: feature.type,
 			scaledSize: new google.maps.Size(40, 40), // scaled size
